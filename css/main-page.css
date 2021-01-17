@@ -1,0 +1,196 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.navbar-style{
+    background-color: black;
+}
+
+.intro-header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #000000;
+    background: url(../img/header-background.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+/* это можно удалить если не будет текста на картинке */
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 7em;
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+/* до сюда */
+
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    /* след 2 тоже удалить если они не нужны */
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #000000;
+    color: #ffe341;
+}
+
+.content-section-b {
+    padding: 50px 0;
+    background-color: #ffe341;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 250px;
+    border-top: 3px solid #000000;
+}
+
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+
+
+.dark-form textarea, 
+.dark-form input[type="text"], 
+.dark-form input[type="password"], 
+.dark-form input[type="datetime"], 
+.dark-form input[type="datetime-local"], 
+.dark-form input[type="date"], 
+.dark-form input[type="month"], 
+.dark-form input[type="time"], 
+.dark-form input[type="week"], 
+.dark-form input[type="number"], 
+.dark-form input[type="email"], 
+.dark-form input[type="url"], 
+.dark-form input[type="search"], 
+.dark-form input[type="tel"], 
+.dark-form input[type="color"], 
+.dark-form .uneditable-input{
+    color: #333333;
+
+    text-rendering: auto;
+    font-size: 23px;
+    font-weight: 700;
+
+    background: #ffe341; /*  #ffe341   rgba(245, 190, 2, 1)*/
+    border-bottom: 2px solid transparent;
+
+    border: none;
+    line-height: 20px;
+    padding: 11px 30px;
+    margin: 0 0 22px 0;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    width: 100%;
+    border-bottom: 3px solid #000000;
+    box-shadow: none;
+}
+
+.dark-form input::placeholder{
+    color:#333333;
+}
+
+.dark-form textarea::placeholder{
+    color:#333333;
+}
+
+.dark-form textarea{
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #f3bb02;
+    border: 3px solid #000000;
+
+    color: #333333;
+    text-rendering: auto;
+    font-size: 23px;
+    font-weight: 700;
+
+    height: 55px;
+    cursor: pointer;
+    display: block;
+    
+    margin-bottom: 20px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    width: 100%;
+}
+
+.dark-form textarea:focus, 
+.dark-form input[type="text"]:focus, 
+.dark-form input[type="password"]:focus, 
+.dark-form input[type="datetime"]:focus, 
+.dark-form input[type="datetime-local"]:focus, 
+.dark-form input[type="date"]:focus, 
+.dark-form input[type="month"]:focus, 
+.dark-form input[type="time"]:focus, 
+.dark-form input[type="week"]:focus, 
+.dark-form input[type="number"]:focus, 
+.dark-form input[type="email"]:focus, 
+.dark-form input[type="url"]:focus, 
+.dark-form input[type="search"]:focus, 
+.dark-form input[type="tel"]:focus, 
+.dark-form input[type="color"]:focus, 
+.dark-form .uneditable-input:focus{
+    border-bottom: 3px solid #96750b;
+    outline: none;
+}
+
+.dark-form input[type="submit"]:focus{
+    background-color:  #96750b;
+    outline: none;
+}
